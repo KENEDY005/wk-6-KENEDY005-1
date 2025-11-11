@@ -23,6 +23,7 @@
 | M-07 | Filter a request | Filter request based on different criteria | Login as admin and try to filter pickup request based on diferrent combinations| The filter button should work perfectly on different inputs | low | Daniel |
 | M-08 | Update pickup requests | update pickup request change it from one state to another | The requests should be updated successfully | medium |Daniel |
 | M-09 | Boundary Testing | Test maximum/ minimum no of words feedback input field can take | Enter atleast one word and as many words as possible | low |Juliet |
+| M-10 | Data persistence | Reload the page | Submit a request then reload the page | The data entered should remain intact after the page reloads | medium | Daniel | 
 
 
 ### 1.2 Negative Test Cases
