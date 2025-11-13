@@ -24,6 +24,9 @@
 | M-08 | Update pickup requests | update pickup request change it from one state to another | The requests should be updated successfully | medium |Daniel |
 | M-09 | Boundary Testing | Test maximum/ minimum no of words feedback input field can take | Enter atleast one word and as many words as possible | low |Juliet |
 | M-10 | Data persistence | Reload the page | Submit a request then reload the page | The data entered should remain intact after the page reloads | medium | Daniel | 
+| M-11 | Unauthorized admin access | Try to open /admin page without logging in | Redirected to login page or shown an “Access Denied” message | High |
+| M-12 | Data persistence after page reload | Submit a pickup request → Reload the page | Request still appears (data saved via localStorage) | Medium |
+| M-13 | Filter requests by location | Login as admin → Go to Dashboard → Choose a specific location (e.g., Kenya) | Only requests from the selected location should display | Medium |
 
 
 ### 1.2 Negative Test Cases
