@@ -19,25 +19,32 @@
 | M-03 | Submit a pickup request | Fill pickup request form with valid data and submit | Request submitted successfully | Medium | Daniel |
 | M-04 | Submit feedback | Enter feedback message and submit | Feedback submitted successfully | Low | Daniel |
 | M-05 | Admin login | Enter correct admin credentials | Admin logged in successfully | High | Daniel & Juliet  |
-|M-06| Responsiveness to different viewports | Test how the website responds on various viewports| The website should be responsive |High | Juliet |
+| M-06 | Responsiveness to different viewports | Test how the website responds on various viewports| The website should be responsive |High | Juliet |
 | M-07 | Filter a request | Filter request based on different criteria | Login as admin and try to filter pickup request based on diferrent combinations| The filter button should work perfectly on different inputs | low | Daniel |
 | M-08 | Update pickup requests | update pickup request change it from one state to another | The requests should be updated successfully | medium |Daniel |
 | M-09 | Boundary Testing | Test maximum/ minimum no of words feedback input field can take | Enter atleast one word and as many words as possible | low |Juliet |
 | M-10 | Data persistence | Reload the page | Submit a request then reload the page | The data entered should remain intact after the page reloads | medium | Daniel | 
+| M-11 | Data intergrity | Try and Logout after a successful login | The website should clear the user's session data | High | Excellent |
+| M-12 | Request tracking  | Login as a user and view your pickup request progress | User should be able to see realtime progress of his/her request| medium | Excellent $ Daniel |
+| M-14 | Notification for status changes | Login as an admin, update the status of a pickup request | Both the user and admin should receive a message for change of status of a request| Low | Kenedy |
+
+
+
 
 
 ### 1.2 Negative Test Cases
 | ID | Test Case Description | Steps | Expected Result | Severity | Assignee |
 |----|---------------------|-------|----------------|---------|--------|
-| M-06 | Register user with empty fields | Submit registration form without details | Error messages shown, registration fails | High | Kenedy & Daniel |
-| M-07 | Login with wrong password | Enter valid email but wrong password | Login fails with error | High | Kenedy  |
-| M-08 | Submit empty pickup form | Submit pickup form with no data | Validation error shown | Medium | Kenedy |
-| M-09 | Submit empty feedback | Submit feedback form with no message | Validation error shown | Low | Kenedy |
-| M-10 | Admin update without selecting request | Try to update status without selecting request | Error message displayed | Medium | Daniel |
-| M-11 | Register an invalid user | Use an invalid email during registration | Error/ Alert requesting you to enter a valid mail| High | Daniel|
-| M-12 | Submit an empty feedback | fill the feedback form but leave the field input blank | Alert/ message requesting you to enter a feedback |Juliet & Kenedy |
-| M-13 | Submit feedback while logged out| Log out and try to submit a feedback | Message requiring you to log in | High |Kenedy |
-| M -14| Duplicate user registration | Register a user twice using same details and different passwords | Error telling you the user is already registered | High | Kenedy & Daniel | 
+| M-15 | Register user with empty fields | Submit registration form without details | Error messages shown, registration fails | High | Kenedy & Daniel |
+| M-16 | Login with wrong password | Enter valid email but wrong password | Login fails with error | High | Kenedy  |
+| M-17 | Submit empty pickup form | Submit pickup form with no data | Validation error shown | Medium | Kenedy |
+| M-18 | Submit empty feedback | Submit feedback form with no message | Validation error shown | Low | Kenedy |
+| M-16 | Admin update without selecting request | Try to update status without selecting request | Error message displayed | Medium | Daniel |
+| M-19 | Register an invalid user | Use an invalid email during registration | Error/ Alert requesting you to enter a valid mail| High | Daniel|
+| M-20 | Submit an empty feedback | fill the feedback form but leave the field input blank | Alert/ message requesting you to enter a feedback |Juliet & Kenedy |
+| M-21 | Submit feedback while logged out| Log out and try to submit a feedback | Message requiring you to log in | High |Kenedy |
+| M -22| Duplicate user registration | Register a user twice using same details and different passwords | Error telling you the user is already registered | High | Kenedy & Daniel | 
+| M-23 | Date Validation | Submit a feedack with invalid date/ | error message or alert; please enter a valid date"| High | Excellent |
 
 ---
 
