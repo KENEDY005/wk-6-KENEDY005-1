@@ -22,7 +22,7 @@
 |------|------|------------------|
 | Test Manager | Kenedy Ambila | Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | Daniel Musembi | Risk identification, prioritization, test design linkage |
-| Test Executor | Excellent  | Execution, evidence capture, defect logging |
+| Test Executor | Excellent Anjorin  | Execution, evidence capture, defect logging |
 
 ## Test Summary Overview
 
@@ -157,8 +157,8 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 ### 1.1 Positive Manual Test Cases
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
-|----|---------|-----------|----------------|---------------|--------|-----------|-----------|
+| ID   | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
+|------|---------|-----------|----------------|---------------|--------|-----------|-----------|
 | M-01 | Registration | Register a new user with valid details | User account created successfully |  |  | R006 | Daniel & Excellent |
 | M-02 | Login | Login with correct user credentials | User is logged in |  |  | R001 | Daniel |
 | M-03 | Pickup Request | Submit a pickup request with valid inputs | Request submitted successfully |  |  | R003 | Daniel |
@@ -177,13 +177,13 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 ### 1.2 Negative Manual Test Cases
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
-|----|---------|-----------|----------------|---------------|--------|-----------|-----------|
+| ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
+|------|---------|-----------|----------------|---------------|--------|-----------|-----------|
 | M-15 | Registration | Register user with empty form fields | Error messages shown, registration fails |  |  | R003 | Kenedy & Daniel |
 | M-16 | Login | Login with wrong password | Login fails with error |  |  | R001 | Kenedy |
 | M-17 | Pickup Request | Submit empty pickup form | Validation error should appear |  |  | R003 | Kenedy |
 | M-18 | Feedback | Submit feedback with empty message | Validation error shown |  |  | R003 | Kenedy |
-| M-16 (Duplicate) | Admin Update | Update request without selecting a request | Error message displayed |  |  | R007 | Daniel |
+| M-16 | Admin Update | Update request without selecting a request | Error message displayed |  |  | R007 | Daniel |
 | M-19 | Registration | Register with invalid email format | Error requiring valid email |  |  | R003 | Daniel |
 | M-20 | Feedback | Submit feedback form with blank input | Prompt to enter feedback |  |  | R003 | Excellent & Kenedy |
 | M-21 | Feedback | Submit feedback while logged out | User asked to log in |  |  | R006 | Kenedy |
@@ -198,8 +198,8 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 #### Positive Selenium Tests
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
-|----|---------|-----------|----------------|---------------|--------|-----------|-----------|
+| ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
+|-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
 | S-01 | Registration | Register a new user using UI | User account created successfully |  |  | R006 | Kenedy |
 | S-02 | Login | Login using valid credentials | User logged in successfully |  |  | R001 | Kenedy |
 | S-03 | Pickup Request | Submit a valid pickup request | Request submitted successfully |  |  | R003 | Kenedy |
@@ -208,8 +208,8 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 #### Negative Selenium Tests
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
-|----|---------|-----------|----------------|---------------|--------|-----------|-----------|
+| ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
+|-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
 | S-06 | Registration | Submit registration with empty fields | Registration fails with error |  |  | R003 | Kenedy |
 | S-07 | Login | Login with wrong password | Login fails with error |  |  | R001 | Kenedy |
 | S-08 | Pickup Request | Submit empty pickup request | Validation error shown |  |  | R003 | Kenedy |
@@ -222,8 +222,8 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 #### Positive Jest Tests
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
-|----|---------|-----------|----------------|---------------|--------|-----------|-----------|
+| ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
+|-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
 | J-01 | Registration | Test success of `registerUser()` | Returns success response |  |  | R006 | Daniel |
 | J-02 | Login | Test correct credentials via `loginUser()` | Returns auth token |  |  | R001 | Daniel |
 | J-03 | Pickup Request | Test `submitPickup()` with valid data | Request created |  |  | R003 | Daniel |
@@ -232,8 +232,8 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 #### Negative Jest Tests
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
-|----|---------|-----------|----------------|---------------|--------|-----------|-----------|
+| ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
+|-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
 | J-06 | Registration | Register user with empty fields | Error response |  |  | R003 | Kenedy & Daniel |
 | J-07 | Login | Wrong password passed to `loginUser()` | Error response |  |  | R001 | Kenedy & Daniel |
 | J-08 | Pickup Request | Empty pickup object submitted | Validation error |  |  | R003 | Kenedy & Daniel |
@@ -312,5 +312,6 @@ The testing activities focussed on identifying and evaluating risks that could a
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
 
 
