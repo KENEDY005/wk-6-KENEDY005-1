@@ -159,19 +159,19 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 | ID   | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
 |------|---------|-----------|----------------|---------------|--------|-----------|-----------|
-| M-01 | Registration | Register a new user with valid details | User account created successfully |  |  | R006 | Daniel & Excellent |
-| M-02 | Login | Login with correct user credentials | User is logged in |  |  | R001 | Daniel |
-| M-03 | Pickup Request | Submit a pickup request with valid inputs | Request submitted successfully |  |  | R003 | Daniel |
-| M-04 | Feedback | Submit feedback with valid message | Feedback submitted successfully |  |  | R003 | Daniel |
-| M-05 | Admin Login | Login as admin using correct credentials | Admin logged in successfully |  |  | R007 | Daniel & Excellent |
-| M-06 | Responsiveness | Test system responsiveness across viewports | The website should be responsive |  |  | R008 | Excellent |
-| M-07 | Filtering | Filter request based on criteria | Filter works correctly for all inputs |  |  | R009 | Daniel |
-| M-08 | Update Requests | Change pickup request status | Request updated successfully |  |  | R007 | Daniel |
-| M-09 | Boundary Testing | Test min/max words in feedback field | Input accepts min and max allowed words |  |  | R003 | Excellent |
-| M-10 | Data Persistence | Reload page after submitting request | Data remains intact after reload |  |  | R005 | Daniel |
-| M-11 | Data Integrity | Logout after login | Session data is cleared upon logout |  |  | R006 | Excellent |
-| M-12 | Request Tracking | Track pickup request progress | User sees real-time progress |  |  | R010 | Excellent & Daniel |
-| M-14 | Status Notification | Update request status and notify users | User + admin get status change notification |  |  | R007 | Kenedy |
+| M-01 | Registration | Register a new user with valid details | User account created successfully | User account created successfully | Pass  | R006 | Daniel & Excellent |
+| M-02 | Login | Login with correct user credentials | User is logged in | user was logged in successfully |Pass  | R001 | Daniel |
+| M-03 | Pickup Request | Submit a pickup request with valid inputs | Request submitted successfully | request submitted successfully  | Pass | R003 | Daniel |
+| M-04 | Feedback | Submit feedback with valid message | Feedback submitted successfully | feedback submitted | Pass | R003 | Daniel |
+| M-05 | Admin Login | Login as admin using correct credentials | Admin logged in successfully | admin duties displayed | pass | R007 | Daniel & Excellent |
+| M-06 | Responsiveness | Test system responsiveness across viewports | The website should be responsive | web not responsive on small devices  | failed  | R008 | Excellent |
+| M-07 | Filtering | Filter request based on criteria | Filter works correctly for all inputs |  filter function displayed wrong info | failed | R009 | Daniel |
+| M-08 | Update Requests | Change pickup request status | Request updated successfully | update was successfull  | pass | R007 | Daniel |
+| M-09 | Boundary Testing | Test min/max words in feedback field | Input accepts min and max allowed words | accepts as many words as possible | passed | R003 | Excellent |
+| M-10 | Data Persistence | Reload page after submitting request | Data remains intact after reload | user data cleared when the page is reloaded |failed  | R005 | Daniel |
+| M-11 | Data Integrity | Logout after login | Session data is cleared upon logout |  session is cleared |Passed  | R006 | Excellent |
+| M-12 | Request Tracking | Track pickup request progress | User sees real-time progress | no display of request progress  |failed  | R010 | Excellent & Daniel |
+| M-14 | Status Notification | Update request status and notify users | User + admin get status change notification | notification not displayed |failed  | R007 | Kenedy |
 
 ---
 
@@ -179,7 +179,7 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 | ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
 |------|---------|-----------|----------------|---------------|--------|-----------|-----------|
-| M-15 | Registration | Register user with empty form fields | Error messages shown, registration fails |  |  | R003 | Kenedy & Daniel |
+| M-15 | Registration | Register user with empty form fields | Error messages shown, registration fails |  | passed | R003 | Kenedy & Daniel |
 | M-16 | Login | Login with wrong password | Login fails with error |  |  | R001 | Kenedy |
 | M-17 | Pickup Request | Submit empty pickup form | Validation error should appear |  |  | R003 | Kenedy |
 | M-18 | Feedback | Submit feedback with empty message | Validation error shown |  |  | R003 | Kenedy |
@@ -312,6 +312,7 @@ The testing activities focussed on identifying and evaluating risks that could a
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
 
 
 
