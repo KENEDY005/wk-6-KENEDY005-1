@@ -36,13 +36,6 @@ Despite the challanges, the application shows good progress toward meeting opera
 **Environment:** Chrome Browser, Micosoft Edge, VS Code via liveserver, firefox.
 
 ### Features Under Test
-
-| Feature | Description | Risk Category |
-|---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | |
-| Leaderboard | Stores top 3 scores in localStorage | |
-| Bonus Round | Every 3 puzzles → doubles score | |
-
 ## Test Plan
 
 ###  Test Objectives
@@ -303,3 +296,4 @@ The testing activities focussed on identifying and evaluating risks that could a
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
