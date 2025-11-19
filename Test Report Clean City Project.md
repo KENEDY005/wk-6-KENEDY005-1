@@ -179,16 +179,16 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 | ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
 |------|---------|-----------|----------------|---------------|--------|-----------|-----------|
-| M-15 | Registration | Register user with empty form fields | Error messages shown, registration fails |  | passed | R003 | Kenedy & Daniel |
-| M-16 | Login | Login with wrong password | Login fails with error |  |  | R001 | Kenedy |
-| M-17 | Pickup Request | Submit empty pickup form | Validation error should appear |  |  | R003 | Kenedy |
-| M-18 | Feedback | Submit feedback with empty message | Validation error shown |  |  | R003 | Kenedy |
-| M-16 | Admin Update | Update request without selecting a request | Error message displayed |  |  | R007 | Daniel |
-| M-19 | Registration | Register with invalid email format | Error requiring valid email |  |  | R003 | Daniel |
-| M-20 | Feedback | Submit feedback form with blank input | Prompt to enter feedback |  |  | R003 | Excellent & Kenedy |
-| M-21 | Feedback | Submit feedback while logged out | User asked to log in |  |  | R006 | Kenedy |
+| M-15 | Registration | Register user with empty form fields | Error messages shown, registration fails | required name and email  | passed | R003 | Kenedy & Daniel |
+| M-16 | Login | Login with wrong password | Login fails with error | users were logged in with incorrect email  | fail  | R001 | Kenedy |
+| M-17 | Pickup Request | Submit empty pickup form | Validation error should appear | validation errors displayed | passed | R003 | Kenedy |
+| M-18 | Feedback | Submit feedback with empty message | Validation error shown |empty feedback was rejected  | passed  | R003 | Kenedy |
+| M-16 | Admin Update | Update request without selecting a request | Error message displayed | required to update select a request first |passed  | R007 | Daniel |
+| M-19 | Registration | Register with invalid email format | Error requiring valid email | invalid emails were registered | passed | R003 | Daniel |
+| M-20 | Feedback | Submit feedback form with blank input | Prompt to enter feedback | promted to enter feedback  | passed | R003 | Excellent & Kenedy |
+| M-21 | Feedback | Submit feedback while logged out | User asked to log in | sessions were cleared and unable to access feedback | passed | R006 | Kenedy |
 | M-22 | Registration | Register duplicate user | Error: user already registered |  |  | R006 | Kenedy & Daniel |
-| M-23 | Date Validation | Submit feedback with invalid date | Error: enter a valid date |  |  | R002 | Excellent |
+| M-23 | Date Validation | Submit feedback with invalid date | Error: enter a valid date | accepts even past dates  | failed  | R002 | Excellent |
 
 ---
 
@@ -312,6 +312,7 @@ The testing activities focussed on identifying and evaluating risks that could a
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
 
 
 
