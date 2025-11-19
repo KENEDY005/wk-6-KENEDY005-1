@@ -200,11 +200,11 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 | ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
 |-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
-| S-01 | Registration | Register a new user using UI | User account created successfully |  |  | R006 | Kenedy |
-| S-02 | Login | Login using valid credentials | User logged in successfully |  |  | R001 | Kenedy |
-| S-03 | Pickup Request | Submit a valid pickup request | Request submitted successfully |  |  | R003 | Kenedy |
-| S-04 | Feedback | Submit valid feedback | Feedback submitted successfully |  |  | R003 | Kenedy |
-| S-05 | Admin Login | Login using admin credentials | Admin logged in successfully |  |  | R007 | Kenedy |
+| S-01 | Registration | Register a new user using UI | User account created successfully | user account created successfuly  | pass  | R006 | Kenedy |
+| S-02 | Login | Login using valid credentials | User logged in successfully | login was successful | pass  | R001 | Kenedy |
+| S-03 | Pickup Request | Submit a valid pickup request | Request submitted successfully | submitted successfully  |pass  | R003 | Kenedy |
+| S-04 | Feedback | Submit valid feedback | Feedback submitted successfully | feedback sent  |pass  | R003 | Kenedy |
+| S-05 | Admin Login | Login using admin credentials | Admin logged in successfully | successful | pass | R007 | Kenedy |
 
 #### Negative Selenium Tests
 
@@ -312,6 +312,7 @@ The testing activities focussed on identifying and evaluating risks that could a
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
 
 
 
