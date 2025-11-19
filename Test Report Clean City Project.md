@@ -1,14 +1,19 @@
 # 🧪 SOFTWARE TEST REPORT: The testTriad Group
 
 # CLEAN CITY PROJECT 
+
 **Date of report**: 20/11/2025
+
 **Prepared by**: Kenedy Ambila
 
 
 
-**Course:** Software Testing & Quality Assurance  
-**Module:** Test Management 
+**Course:** Software Testing & Quality Assurance 
+
+**Module:** Test Management
+
 **Project Type:** Group Assessment: The testTriad 
+
 **Submission Date:** 2025-11-21
 
 ## Team Information
@@ -36,6 +41,17 @@ Despite the challanges, the application shows good progress toward meeting opera
 **Environment:** Chrome Browser, Micosoft Edge, VS Code via liveserver, firefox.
 
 ### Features Under Test
+    1. Registration
+    2. Login
+    3. Request Pickup 
+    4. Feedback
+    5. Admin Login
+    6. Manage Requests
+    7. Navigation/UI
+    8. Security/Validation
+
+    Both positive and negative tests were created on feature
+    
 ## Test Plan
 
 ###  Test Objectives
@@ -296,4 +312,5 @@ The testing activities focussed on identifying and evaluating risks that could a
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
 
