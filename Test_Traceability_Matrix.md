@@ -16,7 +16,7 @@
 |----|---------------------|-------|----------------|---------|--------|
 | M-01 | Register a new user | Fill user registration form with valid details and submit | User account created successfully | High | Daniel & Juliet |
 | M-02 | Login with correct credentials | Enter valid email and password, click login | User is logged in | High | Daniel |
-| M-03 | Submit a pickup request | Fill pickup request form with valid data and submit | Request submitted successfully | Medium | Daniel |
+| M-03 | Submit a pickup request | Fill pickup request form with valid data and submit | Request submitted successfully and appears under the user's "y requests section" | Medium | Daniel |
 | M-04 | Submit feedback | Enter feedback message and submit | Feedback submitted successfully | Low | Daniel |
 | M-05 | Admin login | Enter correct admin credentials | Admin logged in successfully | High | Daniel & Juliet  |
 | M-06 | Responsiveness to different viewports | Test how the website responds on various viewports| The website should be responsive |High | Juliet |
