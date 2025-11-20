@@ -312,15 +312,16 @@ The testing activities focused on identifying and evaluating risks that could af
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| Kenedy Ambila| Test Manager | KA | |
-| Daniel Musembi| Risk Analyst | DM | |
-| Excellent Anjorin | Test Executor | EA | |
+| Kenedy Ambila| Test Manager | KA | 20/11/2025 |
+| Daniel Musembi| Risk Analyst | DM | 20/11/2025 |
+| Excellent Anjorin | Test Executor | EA | 20/11/2025 |
 
 ## Overall Summary
 
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
