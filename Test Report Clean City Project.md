@@ -275,7 +275,7 @@ The testing activities focused on identifying and evaluating risks that could af
 
 - Total Defects Logged: 
 - Critical High: 
-- Fix Rate: 
+- Fix Rate: 0%. The defects havent been fixed yet. This cycle only focussed on identifying them no fixing was required.
 
 ## Test Control & Project Management
 
@@ -315,6 +315,7 @@ The testing activities focused on identifying and evaluating risks that could af
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
