@@ -25,12 +25,13 @@
 | Test Executor | Excellent Anjorin  | Execution, evidence capture, defect logging |
 
 ## Test Summary Overview
+This testing cycle for the Clean City Web Application focused on validating the core user journey, including authentication, form submissions, scheduling pickups, and general system responsiveness. Through both manual verification and automated Selenium tests and Jest unit testing, we assessed the application's stability, accuracy of input handling, and error-response behaviour. Manual tests complemented automated checks to ensure alignment between expected and actual system behaviour.
 
-This testing cycle for the Clean City Web Application focused on validating the coe user journey, including authentication, form submissions, scheduling pickups, and geneal system responsiveness. Through both manual verification and automated Selenium tests and jest unit testing, we assessed the application's stability, accuracy  of input handling, error-response behaviour. Manual tests complemented automated checks to ensure alignment between expected and actual system behaviour.
-Overally the system demonstrates functional readiness in essential areas such as login, navigation and page rendering. Jest unit tests were executed on core logic functions (input validation, date formatting, error-handling utilities). These tests helped expose issues not visible through UI testing alone, especially the inconsistent validation rules and unpedictable handling of malformed inputs.
-However, several defects were identified, expecially around the input behaviour, missing validation messages, element locator instability not forgetting core security features also had issues like successfull invalid logins, no notifications on status of the pickup schedule both on user and admin. These issues affect the reliablity and  overall user experience.
-Despite the challanges, the application shows good progress toward meeting operational requirements. Addressing the identified defects, improving validation logic, and expanding both Selenium and jest coverage will significantly enhance product reliability and readiness fo the next release cycle.
+Overall, the system demonstrates functional readiness in essential areas such as login, navigation, and page rendering. Jest unit tests were executed on core logic functions, including input validation, date formatting, and error-handling utilities. These tests helped uncover issues not visible through UI testing alone, particularly inconsistent validation rules and unpredictable handling of malformed inputs.
 
+However, several defects were identified, especially around input behaviour, missing validation messages, and element locator instability. Core security features also showed major issues, such as successful invalid logins and the absence of notifications on pickup-schedule status for both users and administrators. These issues affect the reliability, security, and overall user experience.
+
+Despite these challenges, the application shows strong progress toward meeting operational requirements. Addressing the identified defects, strengthening validation logic, and expanding both Selenium and Jest test coverage will significantly enhance product reliability and readiness for the next release cycle.
 
 
 
@@ -38,7 +39,7 @@ Despite the challanges, the application shows good progress toward meeting opera
 
 **System Under Test:** Clean City Web Applicaton
 **Technology Stack:** HTML, CSS, JavaScript  
-**Environment:** Chrome Browser, Micosoft Edge, VS Code via liveserver, firefox.
+**Environment:** Chrome Browser, Microsoft Edge, Firefox/Mozilla Browser, Visual Studio (VS) Code through live server extension, 
 
 ### Features Under Test
     1. Registration
@@ -50,18 +51,18 @@ Despite the challanges, the application shows good progress toward meeting opera
     7. Navigation/UI
     8. Security/Validation
 
-    Both positive and negative tests were created on feature
+    Both positive and negative tests were created on the feature
     
 ## Test Plan
 
 ###  Test Objectives
-The primary objective of this testing cycle was to evaluate the quality, functionality, performance and the usability of the Clean City Web Application before its release to production. Our testing aimed to:
+The primary objective of this testing cycle was to evaluate the quality, functionality, performance and usability of the Clean City Web Application before its production release. Our testing aimed to:
 
-    1. Verify functional correctness of all CLean City modules.
+    1. Verify functional correctness of all Clean City modules.
     2. Confirm user flows behave as expected.
     3. Identify system defects and inconsistencies.
     4. Validate reliability and security of authentication.
-    5. Confirm usablity and accessibility standards.
+    5. Confirm usability and accessibility standards.
     6. Ensure compliance with project requirements.
 - 
 
@@ -69,7 +70,7 @@ The primary objective of this testing cycle was to evaluate the quality, functio
 
 The testing of the CLean City Application covered:
     1. Manual testing
-    2. Selenium AUtomation
+    2. Selenium Automation
     3. Jest unit testing
 to ensure core functionality, user flows and reliability.
 
@@ -86,15 +87,15 @@ to ensure core functionality, user flows and reliability.
 
 - Backend API load testing
 - Database migration
-- Third-party intergrations
+- Third-party integrations
 
-Since the application relies on localStoage for data persistence, backend API load testing and database migration were not applicable in this test cycle. Similarly, third-party intergrations were not fully implemented and will be tested in future cycles once the core functionality is stable.
+Since the application relies on local storage for data persistence, backend API load testing and database migration were not applicable in this test cycle. Similarly, third-party integrations were not fully implemented and will be tested in future cycles once the core functionality is stable.
 
 ### Tools & Resources
 
-- **Selenium:** Automated UI and end to end testing.
-- **Jest:** unit testing for JavaScipt Logic
-- **Manual testing:** Functional,UI/UX and exploratory testing
+- **Selenium:** Automated UI and end-to-end testing.
+- **Jest:** unit testing for JavaScript Logic
+- **Manual testing:** Functional, UI/UX and exploratory testing
 - **VS Code:** Development and test script editing
 - **Browser(Chrome/Edge, via VS Code liveserver):** Application testing enviroment
 - **Test URL:** "http://localhost:3000"
@@ -116,12 +117,12 @@ Since the application relies on localStoage for data persistence, backend API lo
 | ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
 |----|---------|------------------|------------|--------|----------|---------------------|
 | R001 | Login | The system allows login with invalid password | High | Critical | High | Implement strict backend password verification and proper error messages  |
-| R002 | Input | Invalid formats breaks scheduling features | Medium |High | High | Enforce input format validation and use date pciker with proper constrains |
+| R002 | Input | Invalid formats break scheduling features | Medium |High | High | Enforce input format validation and use date picker with proper constraints |
 | R003 | Form validation | Missing error messages for required fields | High | Medium | High | Add frontend and backend validation with clear, consistent error messages |
 | R004 | UI navigation | Some pages not accessible on smaller screen | Low | Medium | Medium|Test on multiple screen and make UI responsive media queries |
-| R005 | Error handling | Erros not properly returned to user or logged | Medium | High | High | Standrdize error handling, log errors, and provide user-friendly messages |
-| R006 | Registration | Unegistered users can access the app | High| Critical | High | Add authentication guards, session validation, and route protection on all pages |
-| R007 | Admin Functions Access | A valid admin logs in with correct credentials but unable to perform admin functions due to broken endpoints/ UI restrictions | Medium | High | High | Validate admin role mapping, ensure correct permission in backend add tests to confirm admins can perform all admin functions |
+| R005 | Error handling | Errors not properly returned to user or logged | Medium | High | High | Standardise error handling, log errors, and provide user-friendly messages |
+| R006 | Registration | Unregistered users can access the app | High| Critical | High | Add authentication guards, session validation, and route protection on all pages |
+| R007 | Admin Functions Access | A valid admin logs in with correct credentials but is unable to perform admin functions due to broken endpoints/ UI restrictions | Medium | High | High | Validate admin role mapping, ensure correct permission in backend, add tests to confirm admins can perform all admin functions |
 | R008 | Responsiveness & UI Scaling | Website does not display properly on different viewports or devices | Medium | Medium | Medium | Test and implement responsive layouts and media queries; validate on multiple devices |
 | R009 | Filtering Logic Failure | Filtering requests does not produce correct results | Medium | Medium | Medium | Validate filter logic in frontend and backend; add automated tests for different combinations |
 | R010 | Real-time Tracking Failure | Users cannot see live updates of pickup requests | Medium | High | High | Implement WebSocket or polling updates; test real-time status updates in different scenarios |
@@ -129,12 +130,12 @@ Since the application relies on localStoage for data persistence, backend API lo
 
 ### Risk Coverage
 
-The testing activities focussed on identifying and evaluating risks that could affect the functionality, security and reliability of the CleanCity App. Each risk was mapped to corresponding test cases to ensure adequate coverage across critical areas including:
+The testing activities focused on identifying and evaluating risks that could affect the functionality, security and reliability of the CleanCity App. Each risk was mapped to corresponding test cases to ensure adequate coverage across critical areas, including:
 **1. Authentication Risks**
-- verifying that login, registration and role based actions (admin vs user ) function correctly, including failures such as invalid cedentials or restricted access.
+- verifying that login, registration and role-based actions (admin vs user ) function correctly, including failures such as invalid credentials or restricted access.
 
-**2. Authorization and Admin Previleges**
-- Ensuring that true admins can perform required admin actions while non-admin users restricted.
+**2. Authorisation and Admin Privileges**
+- Ensuring that true admins can perform required admin actions while non-admin users are restricted.
 
 **3. Functional Risks**
 - testing core features such as scheduling pickups, form validation, inputs and request updates to ensure correct workflow behaviour.
@@ -146,11 +147,10 @@ The testing activities focussed on identifying and evaluating risks that could a
 - Ensuring users can navigate the system effectively across different screens and devices.
 
 **6. Operational risks**
-- identifying isssues that may arise from backend failures, api timeouts or incomplete system responses
+- identifying issues that may arise from backend failures, api timeouts or incomplete system responses
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
-
+- Tested Risks Percent (%): 
+- Untested Risks Percent (%):
 # CleanCity Project – Test Cases
 
 ## 1. Manual Test Cases
@@ -245,13 +245,13 @@ The testing activities focussed on identifying and evaluating risks that could a
 
 ## Defects
 
-# Manual tests cases
+# Manual test cases
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
 | | | | | | |
 
-# Selenium end to end test cases 
+# Selenium end-to-end test cases 
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
@@ -312,6 +312,7 @@ The testing activities focussed on identifying and evaluating risks that could a
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
 
 
 
