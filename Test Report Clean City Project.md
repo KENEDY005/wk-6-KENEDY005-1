@@ -309,8 +309,8 @@ The testing activities focused on identifying and evaluating risks that could af
 - Improvements for Next Cycle: Expand automated Selenium and Jest coverage.Implement stricter risk-based test planning, standardize error handling, and maintain robust logging for future releases.
 
 ## Attachments
-
-- 
+- Please find screenshots of automated selenium test in the tests folder > screenshots
+- for jest and manual testing find them on raised issues
 
 ## Sign Off
 
@@ -332,6 +332,7 @@ However, critical defects were identified—particularly around authentication, 
 **Test Status:** 
 
 **Completed **
+
 
 
 
