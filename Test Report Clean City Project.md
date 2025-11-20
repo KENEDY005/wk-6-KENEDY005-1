@@ -210,11 +210,11 @@ The testing activities focused on identifying and evaluating risks that could af
 
 | ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
 |-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
-| S-06 | Registration | Submit registration with empty fields | Registration fails with error |  |  | R003 | Kenedy |
-| S-07 | Login | Login with wrong password | Login fails with error |  |  | R001 | Kenedy |
-| S-08 | Pickup Request | Submit empty pickup request | Validation error shown |  |  | R003 | Kenedy |
-| S-09 | Feedback | Submit empty feedback form | Validation error shown |  |  | R003 | Kenedy |
-| S-10 | Admin Update | Update status without selecting request | Error message displayed |  | Failed | R007 | Kenedy |
+| S-06 | Registration | Submit registration with empty fields | Registration fails with error | user was required to enter the missing parts.   | passed | R003 | Kenedy |
+| S-07 | Login | Login with wrong password | Login fails with error |user granted access and directed to profile  | fail | R001 | Kenedy |
+| S-08 | Pickup Request | Submit empty pickup request | Validation error shown | user requied to fill the missing fields  | passed | R003 | Kenedy |
+| S-09 | Feedback | Submit empty feedback form | Validation error shown | user required to enter feedback  | passed  | R003 | Kenedy |
+| S-10 | Admin Update | Update status without selecting request | Error message displayed | the admin dashboard aint working | Failed | R007 | Kenedy |
 
 ---
 
@@ -224,11 +224,11 @@ The testing activities focused on identifying and evaluating risks that could af
 
 | ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
 |-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
-| J-01 | Registration | Test success of `registerUser()` | Returns success response |  |  | R006 | Daniel |
-| J-02 | Login | Test correct credentials via `loginUser()` | Returns auth token |  |  | R001 | Daniel |
-| J-03 | Pickup Request | Test `submitPickup()` with valid data | Request created |  |  | R003 | Daniel |
-| J-04 | Feedback | Test `submitFeedback()` | Feedback accepted |  |  | R003 | Daniel |
-| J-05 | Admin Login | Test `adminLogin()` authentication | Admin authenticated |  |  | R007 | Daniel |
+| J-01 | Registration | Test success of `registerUser()` | Returns success response | success  | passed | R006 | Daniel |
+| J-02 | Login | Test correct credentials via `loginUser()` | Returns auth token | user granted access | passed | R001 | Daniel |
+| J-03 | Pickup Request | Test `submitPickup()` with valid data | Request created | request created | passed | R003 | Daniel |
+| J-04 | Feedback | Test `submitFeedback()` | Feedback accepted | feedback accepted  | passed  | R003 | Daniel |
+| J-05 | Admin Login | Test `adminLogin()` authentication | Admin authenticated | admin authenticated |passed  | R007 | Daniel |
 
 #### Negative Jest Tests
 
@@ -284,16 +284,18 @@ The testing activities focused on identifying and evaluating risks that could af
 | Phase | Deliverable | Actual Output | Variance | Owner |
 |-------|-------------|---------------|----------|-------|
 | | | | | |
+| | | | | |
+| | | | | |
 
 **Progress Tracking Method:**  
 **Change Control Notes:**
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
+- Most Defect Prone Feature: Login and registration features: Users were able to login using invalid credential, non existent emails and username and were also able to register members with invalid emails: This affect the security of users and the organization.
 - Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
+- Team Communication Effectiveness: Communication is key. Any time there was lack of communication we lagged behind the schedule. 
+- Improvements for Next Cycle: Expand automated Selenium and Jest coverage.Implement stricter risk-based test planning, standardize error handling, and maintain robust logging for future releases.
 
 ## Attachments
 
@@ -312,6 +314,7 @@ The testing activities focused on identifying and evaluating risks that could af
 **Statement:** 
 
 **Test Status:** ☐ Completed / ☐ In Progress 
+
 
 
 
