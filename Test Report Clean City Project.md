@@ -187,7 +187,7 @@ The testing activities focused on identifying and evaluating risks that could af
 | M-19 | Registration | Register with invalid email format | Error requiring valid email | invalid emails were registered | passed | R003 | Daniel |
 | M-20 | Feedback | Submit feedback form with blank input | Prompt to enter feedback | promted to enter feedback  | passed | R003 | Excellent & Kenedy |
 | M-21 | Feedback | Submit feedback while logged out | User asked to log in | sessions were cleared and unable to access feedback | passed | R006 | Kenedy |
-| M-22 | Registration | Register duplicate user | Error: user already registered |  |  | R006 | Kenedy & Daniel |
+| M-22 | Registration | Register duplicate user | Error: user already registered |  system shifts to existing user, asking to update credentials| passed | R006 | Kenedy & Daniel |
 | M-23 | Date Validation | Submit feedback with invalid date | Error: enter a valid date | accepts even past dates  | failed  | R002 | Excellent |
 
 ---
@@ -321,6 +321,7 @@ The testing activities focused on identifying and evaluating risks that could af
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
