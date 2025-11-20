@@ -257,8 +257,8 @@ The testing activities focused on identifying and evaluating risks that could af
 |----|-------------|----------|---------|--------|-------------|
 | S-005  | Admin Login Allows Access with Invalid Password | high | R007 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/19#issue-3643268825 |
 | S-008 | Pickup Scheduling Accepts Past Dates | High | R-002 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/18#issue-3643246195 |
-| | | | | | |
-| | | | | | |
+| S-06 | Registration Succeeds with Invalid Email | High | R006 |open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/17#issue-3643147546 |
+| S-06 | Weak Password Accepted During Registration | High | R-005 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/16#issue-3643066921 |
 | | | | | | |
 | | | | | | |
 # Jest unit test cases
@@ -319,6 +319,7 @@ The testing activities focused on identifying and evaluating risks that could af
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
