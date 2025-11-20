@@ -161,7 +161,7 @@ The testing activities focused on identifying and evaluating risks that could af
 |------|---------|-----------|----------------|---------------|--------|-----------|-----------|
 | M-01 | Registration | Register a new user with valid details | User account created successfully | User account created successfully | Pass  | R006 | Daniel & Excellent |
 | M-02 | Login | Login with correct user credentials | User is logged in | user was logged in successfully |Pass  | R001 | Daniel |
-| M-03 | Pickup Request | Submit a pickup request with valid inputs | Request submitted successfully | request submitted successfully  | Pass | R003 | Daniel |
+| M-03 | Pickup Request | Submit a pickup request with valid inputs | Request submitted successfully and appears on the user's my requests page | request submitted successfully and appears on the user's my requests page | Failed | R003 | Daniel |
 | M-04 | Feedback | Submit feedback with valid message | Feedback submitted successfully | feedback submitted | Pass | R003 | Daniel |
 | M-05 | Admin Login | Login as admin using correct credentials | Admin logged in successfully | admin duties displayed | pass | R007 | Daniel & Excellent |
 | M-06 | Responsiveness | Test system responsiveness across viewports | The website should be responsive | web not responsive on small devices  | failed  | R008 | Excellent |
@@ -321,6 +321,7 @@ The testing activities focused on identifying and evaluating risks that could af
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
