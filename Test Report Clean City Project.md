@@ -255,8 +255,12 @@ The testing activities focused on identifying and evaluating risks that could af
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
+| S-005  | Admin Login Allows Access with Invalid Password | high | R007 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/19#issue-3643268825 |
+| S-008 | Pickup Scheduling Accepts Past Dates | High | R-002 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/18#issue-3643246195 |
 | | | | | | |
-
+| | | | | | |
+| | | | | | |
+| | | | | | |
 # Jest unit test cases
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
@@ -315,6 +319,7 @@ The testing activities focused on identifying and evaluating risks that could af
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
