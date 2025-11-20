@@ -247,11 +247,14 @@ The testing activities focused on identifying and evaluating risks that could af
 
 # Manual test cases
 
-| ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|-------------|----------|---------|--------|-------------|
-| M-06 | UI Responsiveness Issues on Mobile (Overlapping Elements) | High | R008 | OPEN | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/12#issue-3639719086 |
-|  M-12 | Request Tracking Not Working (User Cannot View Submitted Requests) | High | R010 | OPEN | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/13#issue-3642580849 |
-| M-23 | Date Validation Accepts Invalid/Past Dates (5+ Years Old) | High | R002 | OPEN | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/15#issue-3642717970 |
+| ID       | Issue Title                                                                   | Severity | Risk ID  | Status   | GitHub Link                                                                                                                                          |
+| -------- | ----------------------------------------------------------------------------- | -------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| M-06     | UI Responsiveness Issues on Mobile (Overlapping Elements)                     | High     | R008     | OPEN     | [https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/12#issue-3639719086](https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/12#issue-3639719086) |
+| M-12     | Request Tracking Not Working (User Cannot View Submitted Requests)            | High     | R010     | OPEN     | [https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/13#issue-3642580849](https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/13#issue-3642580849) |
+| M-23     | Date Validation Accepts Invalid/Past Dates (5+ Years Old)                     | High     | R002     | OPEN     | [https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/15#issue-3642717970](https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/15#issue-3642717970) |
+| **M-31** | **Pickup Request Not Displayed in “My Requests” After Successful Submission** | **High** | **R011** | **OPEN** | **[https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/21](https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/21)**                               |
+| **M-32** | **Data Not Persisting After Page Reload (Submitted Request Data Cleared)**    | **High** | **R012** | **OPEN** | **[https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/23](https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/23)**                               |
+
 
 # Selenium end-to-end test cases 
 
@@ -332,6 +335,7 @@ However, critical defects were identified—particularly around authentication, 
 **Test Status:** 
 
 **Completed **
+
 
 
 
