@@ -228,17 +228,17 @@ The testing activities focused on identifying and evaluating risks that could af
 | J-02 | Login | Test correct credentials via `loginUser()` | Returns auth token | user granted access | passed | R001 | Daniel |
 | J-03 | Pickup Request | Test `submitPickup()` with valid data | Request created | request created | passed | R003 | Daniel |
 | J-04 | Feedback | Test `submitFeedback()` | Feedback accepted | feedback accepted  | passed  | R003 | Daniel |
-| J-05 | Admin Login | Test `adminLogin()` authentication | Admin authenticated | admin authenticated |passed  | R007 | Daniel |
+| J-05 | Admin update requests | login as admit and update status of a pickup  | update sucessfull | admin actions aint possible | failed  | R007 | Kenedy |
 
 #### Negative Jest Tests
 
 | ID  | Feature | Objective | Expected Result | Actual Result | Status | Risk Link | Assignee |
 |-----|---------|-----------|----------------|---------------|--------|-----------|-----------|
-| J-06 | Registration | Register user with empty fields | Error response |  |  | R003 | Kenedy & Daniel |
-| J-07 | Login | Wrong password passed to `loginUser()` | Error response |  |  | R001 | Kenedy & Daniel |
-| J-08 | Pickup Request | Empty pickup object submitted | Validation error |  |  | R003 | Kenedy & Daniel |
-| J-09 | Feedback | Submit empty feedback object | Validation error |  |  | R003 | Kenedy & Daniel |
-| J-10 | Admin Update | Admin status update without request ID | Error response |  | Failed | R007 | Kenedy & Daniel |
+| J-06 | Registration | Register user with empty fields | Error response | error message requiring use to fill the empty parts  | passed | R003 | Kenedy & Daniel |
+| J-07 | Login | login with empty password fields | Error response |user required to fill the fields  | passed  | R001 | Kenedy & Daniel |
+| J-08 | Pickup Request | Empty pickup object submitted | Validation error | required to complete the pickup details except for more description which was optional | passed  | R003 | Kenedy & Daniel |
+| J-09 | Feedback | Submit empty feedback object | Validation error | feedback field required to be filled  |  passed | R003 | Kenedy & Daniel |
+| J-10 | Admin Update | Admin status update without request ID | Error response | no admin actions can be performed just a page is visible | Failed | R007 | Kenedy & Daniel |
 
 
 
@@ -261,26 +261,30 @@ The testing activities focused on identifying and evaluating risks that could af
 | S-008 | Pickup Scheduling Accepts Past Dates | High | R-002 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/18#issue-3643246195 |
 | S-06 | Registration Succeeds with Invalid Email | High | R006 |open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/17#issue-3643147546 |
 | S-06 | Weak Password Accepted During Registration | High | R-005 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/16#issue-3643066921 |
-| | | | | | |
-| | | | | | |
+| S-005 | login page does not block repeated invalid attempts (Brute Force vulnerability) | high | R007 |copen | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/22#issue-3648471206 |
+
+
 # Jest unit test cases
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+| J-10 | Admin Page: Update Status Button Not Behaving Correctly |Critical | R007 | open | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/20#issue-3648382455 |
 
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent:
+- 
+      - Manual: 18/23 = 78.2 %
+  
+      - Selenium: 5/10 = 50%
+  
+      - Jest: 9/10 = 90%
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
+- Total Defects Logged: 11
+- Critical High: 11
 - Fix Rate: 0%. The defects havent been fixed yet. This cycle only focussed on identifying them no fixing was required.
 
 ## Test Control & Project Management
@@ -318,9 +322,12 @@ The testing activities focused on identifying and evaluating risks that could af
 
 ## Overall Summary
 
+
+
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
