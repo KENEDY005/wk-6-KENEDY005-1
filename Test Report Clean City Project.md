@@ -249,7 +249,9 @@ The testing activities focused on identifying and evaluating risks that could af
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+| M-06 | UI Responsiveness Issues on Mobile (Overlapping Elements) | High | R008 | OPEN | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/12#issue-3639719086 |
+|  M-12 | Request Tracking Not Working (User Cannot View Submitted Requests) | High | R010 | OPEN | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/13#issue-3642580849 |
+| M-23 | Date Validation Accepts Invalid/Past Dates (5+ Years Old) | High | R002 | OPEN | https://github.com/KENEDY005/wk-6-KENEDY005-1/issues/15#issue-3642717970 |
 
 # Selenium end-to-end test cases 
 
@@ -319,6 +321,7 @@ The testing activities focused on identifying and evaluating risks that could af
 **Statement:** 
 
 **Test Status:** ☐ Completed 
+
 
 
 
