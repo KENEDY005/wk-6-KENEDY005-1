@@ -105,9 +105,9 @@ Since the application relies on local storage for data persistence, backend API 
 
 | Phase | Planned Duration (2025) | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| Phase1: Planning & Setup | Due 5/11/2025 | | Completed |
-| Phase2: Test Design $ Early Execution | 11/11/2025 | | Completed |
-| Phase3: Final Execution and Reporting| 18/11/2025 | |Completed |
+| Phase1: Planning & Setup | Due 5/11/2025 |8/11/2025 | Completed |
+| Phase2: Test Design $ Early Execution | 11/11/2025 |17/11/2025 | Completed |
+| Phase3: Final Execution and Reporting| 18/11/2025 |20/11/2025 |Completed |
 
 
 ## Risk Analysis
@@ -279,13 +279,14 @@ The testing activities focused on identifying and evaluating risks that could af
 
 ## Test Control & Project Management
 
-### Phases
+# Phases
 
-| Phase | Deliverable | Actual Output | Variance | Owner |
-|-------|-------------|---------------|----------|-------|
-| | | | | |
-| | | | | |
-| | | | | |
+| Phase                                 | Deliverable                                                   | Actual Output                             | Variance     | Owner              |
+| ------------------------------------- | ------------------------------------------------------------- | ----------------------------------------- | ------------ | ------------------ |
+| Phase1: Planning & Setup              | Project plan, test strategy, and environment setup            | Test plan created; environment ready      | 3 days delay | Kenedy Ambila      |
+| Phase2: Test Design & Early Execution | Test cases, test scripts, and initial execution results       | Test cases executed; early defects logged | 6 days delay | The testTriad Team |
+| Phase3: Final Execution and Reporting | Final test execution, defect reports, and test summary report | All tests executed; report submitted      | 2 days delay | The testTriad Team |
+
 
 **Progress Tracking Method:**  
 **Change Control Notes:**
@@ -307,13 +308,14 @@ The testing activities focused on identifying and evaluating risks that could af
 |------|------|-----------|------|
 | Kenedy Ambila| Test Manager | KA | |
 | Daniel Musembi| Risk Analyst | DM | |
-| Excellent | Test Executor | EA | |
+| Excellent Anjorin | Test Executor | EA | |
 
 ## Overall Summary
 
 **Statement:** 
 
-**Test Status:** ☐ Completed / ☐ In Progress 
+**Test Status:** ☐ Completed 
+
 
 
 
