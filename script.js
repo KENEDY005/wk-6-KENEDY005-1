@@ -932,3 +932,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Show home page by default
   navigateToPage('home');
 }); 
+
+// Export functions for Jest testing
+
+module.exports = {
+  dataService,
+  login,
+  register,
+  logout,
+  validatePickupForm,
+  validateFeedbackForm,
+};
+
