@@ -323,10 +323,15 @@ The testing activities focused on identifying and evaluating risks that could af
 ## Overall Summary
 
 
-
 **Statement:** 
 
-**Test Status:** ☐ Completed 
+The Clean City application underwent a comprehensive testing cycle involving manual, Selenium, and Jest unit tests to assess core functionality, security, validation accuracy, and overall user experience. The system demonstrates strong foundational progress, with major user flows such as registration, login, request submission, and feedback functioning as intended in many scenarios. Automated unit tests achieved high reliability, confirming that core logic modules behave correctly under both positive and negative conditions.
+
+However, critical defects were identified—particularly around authentication, input validation, date handling, admin privileges, UI responsiveness, and security vulnerabilities such as allowing invalid logins and accepting brute-force attempts. These issues significantly impact the system’s stability and readiness for real-world use. Addressing these defects, strengthening validation mechanisms, improving user feedback messages, and enhancing admin features will be essential for the next development cycle. Overall, the application is progressing well but requires focused improvement in high-risk areas before production readiness.
+
+**Test Status:** 
+
+**Completed **
 
 
 
